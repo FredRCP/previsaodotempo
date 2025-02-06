@@ -1,0 +1,97 @@
+*{
+    font-size: 62,5%;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+  background-image:url("../img/5.png");
+  background-position: center;   
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Esconde a barra de rolagem, mas permite a rolagem */
+body, html {
+  overflow: scroll;
+  -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
+  scrollbar-width: none; /* Para Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Para Webkit (Chrome, Safari) */
+}
+
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+  
+}
+
+#weather-info {
+  display: none;
+  margin-top: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f9f9f9;
+}
+
+#weather-icon {
+  width: 75px;
+  height: 75px;
+  display: none;
+}
+
+#suggestions-list {
+position: absolute;
+z-index: 1000;
+width: 50%;
+margin-left: 25%;
+padding: 0;
+margin-top: 0;
+max-height: 200px;
+overflow-y: auto;
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#suggestions-list .list-group-item {
+cursor: pointer;
+padding: 10px;
+}
+
+#suggestions-list .list-group-item:hover {
+background-color: #f1f1f1;
+}
+
+#forecast-info {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 20px;
+text-align: center;
+}
+
+.forecast-day {
+background-color: #f9f9f9;
+padding: 15px;
+border-radius: 8px;
+border: 1px solid #ddd;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day img {
+width: 50px;
+height: 50px;
+display: block;
+margin: 0 auto;
+}

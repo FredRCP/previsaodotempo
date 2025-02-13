@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image:url("../img/fundo3.png");
+  background-image:url("../img/fundo.png");
   background-position: center;   
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,9 +49,9 @@ body::-webkit-scrollbar {
 .fone{
   display: block;
   margin-top: 35px;
-  padding: 1px;
+  padding: 4px;
   border-radius: 20px;
-  max-width: 260px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   background-image:url("../img/fone.png");

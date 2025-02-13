@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image:url("../img/5.png");
+  background-image:url("../img/fundo3.png");
   background-position: center;   
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,6 +19,7 @@ body, html {
   overflow: scroll;
   -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
   scrollbar-width: none; /* Para Firefox */
+  font-size: 15px;
 }
 
 body::-webkit-scrollbar {
@@ -34,14 +35,31 @@ body::-webkit-scrollbar {
 
 #weather-info {
   display: none;
-  margin-top: 20px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  max-width: 300px;
+  margin-top: 35px;
+  padding: 5px;
+  border-radius: 20px;
+  max-width: 220px;
+  max-height: 90%;
   margin-left: auto;
   margin-right: auto;
-  background: #f9f9f9;
+  background: #cee5ff00;
+  border: 0;
+}
+
+.fone{
+  display: block;
+  margin-top: 35px;
+  padding: 1px;
+  border-radius: 20px;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:url("../img/fone.png");
+  background-position: center;   
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ffffff00;
+
 }
 
 #weather-icon {
@@ -82,7 +100,7 @@ text-align: center;
 }
 
 .forecast-day {
-background-color: #f9f9f9;
+background-color: #ffffffe7;
 padding: 15px;
 border-radius: 8px;
 border: 1px solid #ddd;
@@ -94,4 +112,16 @@ width: 50px;
 height: 50px;
 display: block;
 margin: 0 auto;
+}
+
+.logo{
+  position: fixed;
+  right: 1rem;
+  bottom: 0.5rem;
+  width: 16rem;
+  transition: all 500ms ease-in-out;
+}
+
+.logo:hover{
+  transform: scale(1.1);
 }

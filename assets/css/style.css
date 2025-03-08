@@ -135,7 +135,7 @@ background-color: #f1f1f1;
 
 @media(max-width:1600px){
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .container {
@@ -182,3 +182,69 @@ background-color: #f1f1f1;
       width: 14rem;
     }
 }
+
+@media(max-width: 768px){
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .input-group {
+    width: 90% !important;
+  }
+
+  #suggestions-list {
+    position: absolute;
+    z-index: 1000;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0;
+    margin-top: 0;
+    max-height: 200px;
+    }
+  
+  #weather-info {
+    margin-top: 70px;
+    padding: 5px;
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 90%;
+  }
+  
+  .fone{
+    margin-top: 20px;
+    padding: 4px;
+    border-radius: 20px;
+    max-width: 380px; 
+  }
+  
+  #weather-icon {
+    width: 75px;
+    height: 75px;
+  }
+    
+    #suggestions-list .list-group-item {
+    padding: 5px;
+    }
+    
+  
+    #forecast-info {
+    gap: 20px;
+    }
+    
+    .forecast-day {
+    padding: 8px;
+    border-radius: 8px;
+    }
+
+    .logo{
+      right: -2rem;
+      bottom: -2rem;
+      width: 12rem;
+    }
+
+}
+
